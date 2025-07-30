@@ -30,10 +30,6 @@ function writeTasks(tasks) {
 
 let tasks = readTasks();
 
-app.get("/", (req, res) => {
-  res.sendFile();
-});
-
 // GET all the tasks
 app.get("/tasks", (req, res) => {
   res.json(tasks);
